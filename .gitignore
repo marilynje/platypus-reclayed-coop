@@ -1,0 +1,4 @@
+build/
+releases/
+*.pdb
+__pycache__/
