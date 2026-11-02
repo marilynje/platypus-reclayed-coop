@@ -1,3 +1,5 @@
+<p align="center"><img src="workshop/logo.png" alt="Platypus Co-op" width="560"></p>
+
 # Platypus Reclayed — Online Co-op
 
 Неофициальный онлайн-кооператив на двоих для **Platypus Reclayed** (Steam,

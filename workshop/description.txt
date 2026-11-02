@@ -1,0 +1,43 @@
+[h1]Platypus Co-op — online co-op for two[/h1]
+Invite a friend through Steam and play Platypus Reclayed together, each on their own PC.
+
+[b]IMPORTANT: this Workshop item is only the on/off switch.[/b] The co-op itself is a BepInEx mod that the game cannot load from the Workshop. Install it once:
+[list]
+[*]Download [b]PlatypusReclayedCoop-<version>.zip[/b]: [url=https://github.com/marilynje/platypus-reclayed-coop/releases]github.com/marilynje/platypus-reclayed-coop/releases[/url]
+[*]Close the game, unpack the zip, double-click [b]install.bat[/b] (it finds the game through Steam and installs BepInEx 5 + the mod).
+[*]Start the game from Steam and tick [b]Mods → Add-ons → Online Co-op[/b].
+[/list]
+
+[h2]How to play[/h2]
+[list]
+[*]Host: main menu → [b]Online Co-op[/b] → difficulty → world → ship screen.
+[*]Bottom right: [b]Invite a Friend[/b] — pick a friend in the Steam window.
+[*]The friend accepts the invite and lands on the same ship screen.
+[*]Both press [b]Ready[/b] ([b]Cancel[/b] to change ships). The level starts when both are ready.
+[/list]
+Both players need the same game version and the same mod version. Lockstep netplay: only input and checksums travel, both games stay in perfect sync. Texts in all 16 game languages.
+
+Source code (MIT), issues and updates: [url=https://github.com/marilynje/platypus-reclayed-coop]github.com/marilynje/platypus-reclayed-coop[/url]
+
+[hr][/hr]
+
+[h1]Platypus Co-op — онлайн-кооператив на двоих[/h1]
+Пригласите друга через Steam и проходите Platypus Reclayed вместе, каждый на своём компьютере.
+
+[b]ВАЖНО: этот предмет Мастерской — только переключатель.[/b] Сам кооператив — мод на BepInEx, который игра не умеет загружать из Мастерской. Установите его один раз:
+[list]
+[*]Скачайте [b]PlatypusReclayedCoop-<версия>.zip[/b]: [url=https://github.com/marilynje/platypus-reclayed-coop/releases]github.com/marilynje/platypus-reclayed-coop/releases[/url]
+[*]Закройте игру, распакуйте архив, дважды щёлкните [b]install.bat[/b] (сам найдёт игру в Steam и поставит BepInEx 5 и мод).
+[*]Запустите игру из Steam и включите [b]Моды → Дополнения → Online Co-op[/b].
+[/list]
+
+[h2]Как играть[/h2]
+[list]
+[*]Хост: главное меню → [b]Совместная игра[/b] → сложность → мир → выбор корабля.
+[*]Справа внизу — [b]Пригласить друга[/b]: выберите друга в окне Steam.
+[*]Друг принимает приглашение и сразу попадает на тот же экран.
+[*]Оба жмут [b]Готов[/b] ([b]Отмена[/b] — чтобы сменить корабль). Уровень начинается, когда готовы оба.
+[/list]
+У обоих должна быть одна версия игры и одна версия мода.
+
+[i]Unofficial fan mod, not affiliated with Claymatic Games. / Неофициальный фанатский мод, не связан с Claymatic Games.[/i]

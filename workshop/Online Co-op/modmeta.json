@@ -1,0 +1,21 @@
+[
+  {
+    "isOfficial": false,
+    "isLegacy": false,
+    "allowAssetBundles": false,
+    "allowVeryEasyDifficulty": true,
+    "allowNastyDifficulty": true,
+    "displayName": "Online Co-op",
+    "supportsCreditsPanel": true,
+    "supportsAchievementsPanel": true,
+    "supportsGalleryPanel": true,
+    "allowReclayedAchievements": true,
+    "allowClassicAchievements": true,
+    "displayAchievementBlockingIcon": false,
+
+    "isAddon": true,
+    "addonTargetAll": true,
+    "addonTargets": [],
+    "baseMod": ""
+  }
+]
