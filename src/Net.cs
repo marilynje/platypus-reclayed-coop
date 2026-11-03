@@ -770,7 +770,9 @@ namespace ReclayedCoop
         {
             if (sendBye && Connected && (sock != null || SteamMode))
                 SendRaw(Msg.Bye, StringPayload(reason ?? "left"));
-            if (SteamMode) SteamLink.Close(steamPeer, steamPeerSet);
+            // A create/join request can still be pending before SteamMode is set.
+            // Close those too, so a late result cannot reopen co-op during solo.
+            SteamLink.Close(steamPeer, steamPeerSet);
             bool wasSteam = SteamMode;
             SteamMode = false;
             steamPeerSet = false;

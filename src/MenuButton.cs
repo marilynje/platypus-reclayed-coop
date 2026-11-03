@@ -120,6 +120,24 @@ namespace ReclayedCoop
             Button start = template.GetComponent<Button>();
             if (button != null)
             {
+                // Keep the game's original action separate from the single-player
+                // wrapper: online must not call the wrapper and clear its intent.
+                Button.ButtonClickedEvent startAction = start != null ? start.onClick : null;
+                if (start != null)
+                {
+                    start.onClick = new Button.ButtonClickedEvent();
+                    start.onClick.AddListener(delegate
+                    {
+                        InviteSlot.Intent = false;
+                        // A lobby may still be waiting after backing out of co-op.
+                        // Also cancel pending Steam callbacks before starting solo.
+                        Session.Close(null, true);
+                        Ui.CloseWindow();
+                        CoopPanel.Hide();
+                        Plugin.Log.LogInfo("Single player chosen: co-op session cleared");
+                        startAction.Invoke();
+                    });
+                }
                 // Same as the game's first row (Start): difficulty, world, ships;
                 // the ship screen then has "Invite a Friend" (InviteSlot).
                 button.onClick = new Button.ButtonClickedEvent();
@@ -128,7 +146,7 @@ namespace ReclayedCoop
                     InviteSlot.Intent = true;
                     InviteSlot.IntentAt = Time.realtimeSinceStartup;
                     Plugin.Log.LogInfo("Online Co-op chosen: host goes through the menus");
-                    if (start != null) start.onClick.Invoke();
+                    if (startAction != null) startAction.Invoke();
                 });
             }
             else

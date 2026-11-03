@@ -214,8 +214,12 @@ namespace ReclayedCoop
 
         internal static void Close(CSteamID peer, bool hadPeer)
         {
+            pendingLobby = 0;
+            menuRequested = false;
             try
             {
+                if (lobbyCreated != null) lobbyCreated.Cancel();
+                if (lobbyEntered != null) lobbyEntered.Cancel();
                 if (hadPeer)
                 {
                     SteamNetworkingIdentity id = new SteamNetworkingIdentity();

@@ -18,7 +18,7 @@ namespace ReclayedCoop
     public class Plugin : BaseUnityPlugin
     {
         public const string Guid = "marilynje.platypus.reclayedcoop";
-        public const string Version = "0.2.1";
+        public const string Version = "0.2.2";
         public const int Protocol = 7;
 
         internal static ManualLogSource Log;
